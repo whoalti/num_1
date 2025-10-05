@@ -1,6 +1,7 @@
 #include <iostream> 
 #include <cmath>    
 #include <iomanip>  
+#include <string>
 
 double f(double x) {
     return std::sinh(x) - 12.0 * std::tanh(x) - 0.311;
@@ -129,6 +130,23 @@ void relaxationMethod(double x0, double epsilon, int max_iter) {
 // The equation has 3 roots: -3.14986, 0.02828, 3.20207
 int main() { 
     double tolerance = 1e-4;
+
+    std::cout << "Enter tolerance (default is 1e-4): ";
+    std::string line;
+    std::getline(std::cin, line);
+
+    if (!line.empty()) {
+        try {
+            tolerance = std::stod(line);
+        } catch (const std::invalid_argument&) {
+            std::cout << "Invalid input. Using default tolerance 1e-4." << std::endl;
+            tolerance = 1e-4;
+        } catch (const std::out_of_range&) {
+            std::cout << "Input out of range. Using default tolerance 1e-4." << std::endl;
+            tolerance = 1e-4;
+        }
+    }
+
     int max_iterations = 20;
 
     double a = 2.5;
