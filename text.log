@@ -1,0 +1,33 @@
+--- A Priori Relaxation Estimate ---
+Interval: [2.500000, 3.500000]
+m1 = 5.813183, M1 = 16.529134
+Convergence factor q_o = 0.479626
+📈 Predicted iterations: 11
+
+--- A Priori Newton's Estimate ---
+Interval: [2.500000, 3.500000]
+m1 = 5.813183, M2 = 16.629849
+Convergence factor q = 0.426145
+📈 Predicted iterations: 4
+
+========================================
+
+--- Practical Calculation ---
+--- Newton's Method ---
+Iteration 1: x = 3.242667, |x_next - x| = 0.257333
+Iteration 2: x = 3.202896, |x_next - x| = 0.039771
+Iteration 3: x = 3.202071, |x_next - x| = 0.000824
+Iteration 4: x = 3.202071, |x_next - x| = 0.000000
+
+Converged successfully!
+The root is approximately: 3.202071
+Number of iterations: 4
+
+--- Relaxation Method ---
+Iteration 1: x = 3.203514, |x_next - x| = 0.296486
+Iteration 2: x = 3.202080, |x_next - x| = 0.001434
+Iteration 3: x = 3.202071, |x_next - x| = 0.000009
+
+Converged successfully!
+The root is approximately: 3.202071
+Number of iterations: 3
